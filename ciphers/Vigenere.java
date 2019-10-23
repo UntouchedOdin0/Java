@@ -2,7 +2,7 @@ package ciphers;
 
 /**
  * A Java implementation of Vigenere Cipher.
- * @author  straiffix
+ * @Author  straiffix
  */
 
 
@@ -51,7 +51,6 @@ public class Vigenere  {
             }
 
             j = ++j % key.length();
-
         }
         return result;
      }
@@ -62,6 +61,5 @@ public class Vigenere  {
         String ciphertext=encrypt(text, key);
         System.out.println(ciphertext);
         System.out.println(decrypt(ciphertext, key));
-
     }
 }
