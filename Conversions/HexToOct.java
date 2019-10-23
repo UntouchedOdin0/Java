@@ -29,7 +29,7 @@ public class HexToOct {
     /**
      * This method converts a Decimal number to a octal number
      *
-     * @param q The Decimal Number
+     * @param q = The Decimal Number
      * @return The Octal number
      */
     public static int decimal2octal(int q) {
@@ -55,13 +55,13 @@ public class HexToOct {
         int decnum, octalnum;
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Enter Hexadecimal Number : ");
+        System.out.print("Enter Hexadecimal Number: ");
         hexadecnum = scan.nextLine();
 
-        // first convert hexadecimal to decimal
+        // First convert hexadecimal to decimal
         decnum = hex2decimal(hexadecnum);       //Pass the string to the hex2decimal function and get the decimal form in variable decnum
 
-        // convert decimal to octal
+        // Convert decimal to octal
         octalnum = decimal2octal(decnum);
         System.out.println("Number in octal: " + octalnum);
 
