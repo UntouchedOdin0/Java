@@ -9,8 +9,7 @@ package divideconquer;
  */
 
 public final class ClosestPair {
-
-
+    
     /**
      * Number of points
      */
@@ -62,19 +61,16 @@ public final class ClosestPair {
             this.x = xpar;
             this.y = ypar;
         }
-
     }
 
     public Location[] createLocation(int numberValues) {
         return new Location[numberValues];
-
     }
 
     public Location buildLocation(double x, double y) {
         return new Location(x, y);
     }
-
-
+    
     /**
      * xPartition function: arrange x-axis.
      *
@@ -367,6 +363,5 @@ public final class ClosestPair {
         System.out.println("(" + cp.point1.x + ", " + cp.point1.y + ")");
         System.out.println("(" + cp.point2.x + ", " + cp.point2.y + ")");
         System.out.println("Minimum Distance : " + result);
-
     }
 }
